@@ -45,6 +45,7 @@ const Exercise = () => {
 
             <div className="counter-right">
                 <h1 className='name'>Nahid Hossain</h1>
+                <h4 className='name'>Fitness Worker , <span>Cosmos Group</span></h4>
                 <Counter
                 dataas={dataas}
                 ></Counter>
