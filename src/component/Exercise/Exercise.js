@@ -31,6 +31,7 @@ const Exercise = () => {
         <div>
         <FontAwesomeIcon icon={faCoffee} size="lg" />
                 <h2>Feet To Body ...</h2>
+                <h4>Fitness Treet</h4>
             <div className="data-load-left">                
                   {
                     allData.map(data=> <Dataload
