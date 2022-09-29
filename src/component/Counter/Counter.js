@@ -22,13 +22,13 @@ const Counter = (props) => {
     {value:10},{value:20},{value:30},{value:40}
    ];
 
-const [valuee,setValue]=useState([])
+const [valuee,setValue]=useState([0])
 // console.log(valuee);
 
    const breakTime=(value)=>{
     setValue(value)
 
-    console.log(value)
+    // console.log(value)
     let breakTime={};
 
 const storedCart = localStorage.getItem('break_time');
@@ -47,20 +47,9 @@ const quantity = breakTime[value];
     localStorage.setItem('break_time', JSON.stringify(breakTime));
 }
 
-const getBreakTime=()=>{
-    let breakTime={};
-
-    const storedCart = localStorage.getItem('break_time');
-    if(storedCart){
-        breakTime = JSON.parse(storedCart);
-    }
-    return breakTime;
-}
 
 
-
-
-const notify = () => toast("Wow so easy!");
+const notify = () => toast("Wow You Are done !!!");
 
     return (
         <div >
@@ -71,6 +60,7 @@ const notify = () => toast("Wow so easy!");
                 {
                     breakData.map(tata=> <Addbreak
                     tata={tata}
+                    key={tata.value}
                     breakTime={breakTime}
                     ></Addbreak>)
                 }
