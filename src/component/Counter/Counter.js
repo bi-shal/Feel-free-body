@@ -23,9 +23,40 @@ const Counter = (props) => {
    ];
 
 const [valuee,setValue]=useState([])
+// console.log(valuee);
+
    const breakTime=(value)=>{
-    setValue(value);
+    setValue(value)
+
+    console.log(value)
+    let breakTime={};
+
+const storedCart = localStorage.getItem('break_time');
+if(storedCart){
+    breakTime = JSON.parse(storedCart);
 }
+
+const quantity = breakTime[value];
+    if(quantity){
+        const newQuantity = quantity + 1;
+        breakTime[value] = newQuantity;
+    }
+    else{
+        breakTime[value] = 1;
+    }
+    localStorage.setItem('break_time', JSON.stringify(breakTime));
+}
+
+const getBreakTime=()=>{
+    let breakTime={};
+
+    const storedCart = localStorage.getItem('break_time');
+    if(storedCart){
+        breakTime = JSON.parse(storedCart);
+    }
+    return breakTime;
+}
+
 
 
 

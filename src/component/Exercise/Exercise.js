@@ -5,10 +5,8 @@ import './Exercise.css'
 
 const Exercise = () => {
     const [allData,setAlldata]=useState([]);
-    // console.log(allData)
 
     const[dataas,setData]=useState([]);
-    // console.log(dataa);
 
 
     useEffect(()=>{
@@ -19,7 +17,6 @@ const Exercise = () => {
 
 
     const addToCart=(data)=>{
-        // console.log(data);
         const newData = [...dataas,data]
         setData(newData)
 
@@ -28,20 +25,18 @@ const Exercise = () => {
     return (
         <div className='exer-cise'>
 
-            <div>
+        <div>
                 <h2>all data</h2>
-            <div className="data-load-left">
-                
-                {
+            <div className="data-load-left">                
+                  {
                     allData.map(data=> <Dataload
                     key={data.id}
                     data={data}
                     addToCart={addToCart}
                     ></Dataload>)
-                            
-                }
+                   }
             </div>
-            </div>
+        </div>
 
             <div className="counter-right">
                 <h1 className='name'>Nahid Hossain</h1>
