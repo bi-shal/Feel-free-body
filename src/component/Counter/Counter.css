@@ -1,0 +1,23 @@
+.addBreak{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.addbreak-child{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    
+
+}
+.exDetail{
+    margin-left:12px ;
+}
+.tost{
+    background-color: aquamarine;
+    width: 100%;
+    border: none;
+    padding: 15px ;
+    border-radius: 10px;
+}

@@ -1,0 +1,33 @@
+/* /* .break{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: skyblue;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    
+}/* */
+/* .break-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.break button{
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    margin-left: 8px;
+    background-color: lightcoral;
+    color: aliceblue;
+    
+} 
+.break button:hover{
+    background-color: aquamarine;
+} 
+
+.break{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

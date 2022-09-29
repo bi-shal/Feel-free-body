@@ -1,0 +1,29 @@
+.exer-cise{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 10px;
+}
+.data-load-left{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+   
+}
+.name{
+    text-align: center;
+}
+
+
+.counter-right{
+    background-color: tan;
+    padding: 10px;
+}
+
+@media screen and (max-width : 800px){
+    .data-load-left{
+        
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    
+}
