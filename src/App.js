@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import Exercise from './component/Exercise/Exercise';
 import Question from './component/Question/Question';
 
