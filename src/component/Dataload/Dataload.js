@@ -4,9 +4,7 @@ import './Dataload.css'
 const Dataload = (props) => {
     const{addToCart,data}=props
     const{img,name,age,time}=data
-    // console.log(props);
-
-
+    
 
     return (
         <div>
