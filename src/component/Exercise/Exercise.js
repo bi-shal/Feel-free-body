@@ -3,6 +3,9 @@ import Counter from '../Counter/Counter';
 import Dataload from '../Dataload/Dataload';
 import './Exercise.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 const Exercise = () => {
     const [allData,setAlldata]=useState([]);
 
@@ -26,7 +29,8 @@ const Exercise = () => {
         <div className='exer-cise'>
 
         <div>
-                <h2>all data</h2>
+        <FontAwesomeIcon icon={faCoffee} size="lg" />
+                <h2>Feet To Body ...</h2>
             <div className="data-load-left">                
                   {
                     allData.map(data=> <Dataload
