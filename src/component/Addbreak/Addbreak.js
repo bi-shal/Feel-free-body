@@ -2,7 +2,6 @@ import React from 'react';
 import './Addbreak.css'
 
 const Addbreak = (props) => {
-    // console.log(props)
     const {breakTime,tata}=props
     const {value}=tata;
     
